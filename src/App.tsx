@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { matchesMockData } from "./data/mockMatchesData";
 import { updateGameStatus } from "./helpers";
 import { MatchDataTypes } from "./types";
@@ -23,18 +23,11 @@ function App() {
     //remove from matchesData state when game finishes
     setMatchesData((prevState) => prevState.filter((match) => match.id !== id));
 
-    const finishedGames = updateGameStatus(matchesData, id, "finish");
-    const finishedGame = finishedGames.filter((match) => match.id === id);
     //set finished game in finishedMatches state
-    setfinishedMatches((prevState) => [...prevState, ...finishedGame]);
+    const finishedGames = updateGameStatus(matchesData, id, "finish").filter((match) => match.id === id);
+    setfinishedMatches((prevState) => [...prevState, ...finishedGames]);
   };
 
-  //TODO: test purposes delete useEffect 
-  useEffect(() => {
-    console.log(matchesData)
-    console.log(finishedMatches)
-  }, [matchesData])
-  
 
   return (
     <div className="flex flex-col justify-center w-screen md:flex-row">

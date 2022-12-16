@@ -1,3 +1,15 @@
+# Scorebard App info
+
+To start a game click on play button, when a game starts, it should capture (being initial score 0 – 0);
+
+After game is being started score can be Updated. To update score click on update button.
+Receiving the pair score; home team score and away team score updates a game score.
+
+Updating score enables finish/check button. To finish game click on finish/check button. It will remove a match from the scoreboard and put it into finished matches in "Summary of games by TOTAL SCORE" table.
+
+At the end of game you will get a summary of games by total score.
+Those games with the same total score will be returned ordered by the most recently added to our system.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
