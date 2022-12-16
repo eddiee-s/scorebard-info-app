@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import FinishedMatches from "./components/FinishedMatches";
-import Matches from "./components/Matches";
 import { matchesMockData } from "./data/mockMatchesData";
 import { updateGameStatus } from "./helpers";
 import { MatchDataTypes } from "./types";
+import FinishedMatches from "./components/FinishedMatches";
+import Matches from "./components/Matches";
 
 function App() {
   const [matchesData, setMatchesData] = useState<MatchDataTypes[]>(matchesMockData);

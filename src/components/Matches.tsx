@@ -21,8 +21,8 @@ const Matches: FC<MatchesPropTypes> = ({
     <div className="shadow-2xl ml-2 px-5 pb-5">
       <h2 className="text-center p-5 text-xl uppercase text font-bold"> Scoreboard </h2>
       {data.length === 0 && (
-        <div className="flex p-5 h-3/4 items-center">
-          <h3 className=""> No more matches to play </h3>
+        <div className="flex h-3/4 items-center justify-center">
+          <h3 className=""> There are no finished matches yet</h3>
         </div>
       )}
       
