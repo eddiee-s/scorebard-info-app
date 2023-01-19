@@ -21,7 +21,7 @@ const FinishedMatches: FC<{ data: MatchDataTypes[] }> = ({ data }) => {
             <div className=" flex flex-row justify-center items-center">
               <img
                 className="mx-3 rounded-r-full h-10"
-                src={`https://countryflagsapi.com/svg/${match.homeTeam.toLowerCase()}`}
+                src={`images/${match.homeTeam.toLowerCase()}.svg`}
                 alt={match.homeTeam}
               />{" "}
               <h3 className="text-lg font-semibold">
@@ -30,7 +30,7 @@ const FinishedMatches: FC<{ data: MatchDataTypes[] }> = ({ data }) => {
               </h3>
               <img
                 className="mx-3 rounded-l-full h-10"
-                src={`https://countryflagsapi.com/svg/${match.awayTeam.toLowerCase()}`}
+                src={`images/${match.awayTeam.toLowerCase()}.svg`}
                 alt={match.awayTeam}
               />
             </div>
