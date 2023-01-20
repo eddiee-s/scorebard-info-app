@@ -33,16 +33,16 @@ const Matches: FC<MatchesPropTypes> = ({
           >
             <div className=" flex flex-row justify-center items-center">
               <img
-                className="mx-3 rounded-r-full h-10"
+                className="h-8 mx-3 rounded-l-full sm:h-10"
                 src={`images/${match.homeTeam.toLowerCase()}.svg`}
                 alt={match.homeTeam}
               />
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-md sm:text-lg sm:font-semibold">
                 {" "}
                 {match.homeTeam} - {match.awayTeam}{" "}
               </h3>
               <img
-                className="mx-3 rounded-l-full h-10"
+                className="h-8 mx-3 rounded-r-full sm:h-10"
                 src={`images/${match.awayTeam.toLowerCase()}.svg`}
                 alt={match.awayTeam}
               />
