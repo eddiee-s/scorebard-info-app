@@ -16,9 +16,9 @@ const Button: FC<ButtonPropTypes> = ({
   return (
     <button
       aria-label={arialabel}
-      className={`flex m-2 items-center justify-center p-0 cursor-pointer group border-0 rounded-full  ${
+      className={`flex m-2 items-center justify-center p-0 cursor-pointer group border-0 rounded-full ${
         disabled &&
-        "disabled:transition-none disabled:bg-slate-50 disabled:cursor-not-allowed disabled:text-gray-200"
+        "disabled:transition-none disabled:cursor-not-allowed disabled:text-gray-400"
       }`}
       onClick={onClick}
       disabled={disabled}
@@ -27,7 +27,7 @@ const Button: FC<ButtonPropTypes> = ({
         className={`${
           !disabled
             ? "group-hover:text-green-800 "
-            : "group-hover:text-gray-200"
+            : "group-hover:text-gray-400"
         } text-3xl font-bold select-none transition-colors duration-100 ease-linear`}
       >
         {children}
